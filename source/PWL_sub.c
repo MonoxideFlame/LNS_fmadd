@@ -115,7 +115,7 @@ int main(int argc, char** argv){
 
     for(int i = 0; i < 4096; i++){
      //   int weight; int abcissa; int bias;
-        printf("%d:%d:%d:%d\n", i, fxp_log_sub(i), pwl_diff(i), pwl_diff(i) - fxp_log_sub(i));
+        printf("%d:%d:%d:%d\n", i, fxp_log_sub(i), pwl_diff(i), pwl_sum(-i));
         //sum += (out) * (fxp_log_add(-i) - out);
     }
     return 0;
