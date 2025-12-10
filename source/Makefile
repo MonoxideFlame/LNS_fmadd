@@ -9,3 +9,11 @@ sub: PWL_sub.c
 simulate: add_sub.sv Testbench.sv
 	iverilog -g2012 add_sub.sv Testbench.sv 
 	./a.out
+
+add_sub: add_sub.sv sbdbtb.sv
+	iverilog -g2012 add_sub.sv sbdbtb.sv 
+	./a.out
+
+lut_gen: lut_gen.c
+	clang -g -lm lut_gen.c
+	./a.out
