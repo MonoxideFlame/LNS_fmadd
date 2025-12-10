@@ -81,92 +81,11 @@ int pwl_diff(int z){//takes a positive input, and uses the min instead of the ma
 }
 
 
-int pwl_calc(int x, int y){//takes in two positive numbers
-
-    if(sub){
-        int z = (x - y) & 0x7fffffff;
-        int min = x;
-        if(y < min){
-            min = y;
-        }
-
-        return min + pwl_diff(z);
-    } else {
-        z = (x - y); & 0x7fffffff;
-        z = -z;
-
-        int max = x;
-        if(y > max){
-            max = y;
-        }
-    
-        return pwl_sum(z) + max;
-    }
-}
-
-int adder(int x, int y){
-    if(x ^ y < 0){
-        //signs differ;`
-
-        int out = pwl_calc(x & 0x7ff, y & 0x7ff, 1);
-        if((x & 0x7ff) >= (y & 0x7ff)){
-            out |= (x & 0x800);
-        }else{
-            out |= (y & 0x800);//if |y| is bigger, assign the sign of y to the difference
-        }
-        
-        return out;
-    
-    } else {
-        //same sign
-        
-        int out = pwl_calc(x & 0x7ff, y & 0x7ff, 0);
-        out |= (x & 0x800);
-        return out;
-    }
-}
-
-
 int main(int argc, char** argv){
-    int arr[4096];
-    int arr_compressed[4096];
-    for(int i = 0; i < 4096; i++){
-        arr[i] = fxp_log_add(-i);
-    }
-/*
-    int start = 0; int end = 0;
-    int count = 0;
-    for(;end < 4096;){
-        if(arr[start] == arr[end]){
-            end++;   
-        }else{
-            arr_compressed[count] = start;
-            arr_compressed[count + 1] = end;
-            arr_compressed[count + 2] = arr[start];
+    for(int i = 0; i < 64; i++){
 
-            start = end;
-            end = start;
-            count += 3;
-        }
+        printf("zl = %d, d_b = %d\n", i, fxp_log_sub(i));
     }
-
-    for(int i = 0; i < count; i+=3){
-        printf("[%d, %d): %d\n", -arr_compressed[i], -arr_compressed[i+1], arr_compressed[i+2]);
-    }
-
-*/
-    long long sum = 0;
-    long long sum_abs = 0;
-    for(int i = 0; i < 4096; i++){
-        int weight; int abcissa; int bias;
-        int out = pwl_calc(-i);
-        printf("%d:%d\n", -i, fxp_log_add(-i) - out);
-        sum += (fxp_log_add(-i) - out) * (fxp_log_add(-i) - out);
-        sum_abs += (fxp_log_add(-i) - out);
-    }
-
-    printf("RMS error:%f\n", sum * (1.0/67108864) );
-    printf("Disparity:%f", sum_abs * (1.0/4096) );
 //Computing the PWL weights for the 12 bit log_number. 
 // Assume 7 bits of fraction. 
 // The function in question: log2(1 + 2^k);
