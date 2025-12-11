@@ -45,7 +45,6 @@ module S_B (
             weight1 <= 4;
             weight2 <= 6;
             abcissa <= 664;
-            $display("<537");
 
         end else if(z > -960) begin 
             weight1 <= 6;
