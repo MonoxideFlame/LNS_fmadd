@@ -26,8 +26,8 @@ initial begin
     x_sign = 0;
     y_sign = 1;
 
-    for(x_abs = -16; x_abs < 16; x_abs++) begin
-        for(y_abs = -16; y_abs < 16; y_abs++) begin
+    for(x_abs = -1024; x_abs < 1023; x_abs++) begin
+        for(y_abs = -1024; y_abs < 1023; y_abs++) begin
             #10;
 
             x_val = (1.0 - 2.0 * x_sign) * $pow(2.0, x_abs * epsilon);
