@@ -43,6 +43,7 @@ module Adder (input signed [11:0] x, input signed [11:0] y, output reg signed [1
     reg signed [10:0] max_xy;
     reg signed z_s;
     reg signed out_sign;
+    reg signed [11:0] large_result_abs;
 
     SBDB sbdb(.z(abs_diff), .z_s(z_s), .out(t));
 
@@ -68,7 +69,14 @@ module Adder (input signed [11:0] x, input signed [11:0] y, output reg signed [1
                 out = {x[11], x[10:0] + 11'd128};
             end
         end else begin
-            out = {out_sign, t + max_xy};
+            large_result_abs = {t[10], t} + {max_xy[10], max_xy};
+            if(large_result_abs > 12'sd1023) begin
+                out = {out_sign, 11'sd1023};
+            end else if (large_result_abs < -12'sd1024) begin
+                out = {out_sign, -11'sd1024};
+            end else begin
+                out = {out_sign, large_result_abs[10:0]};
+            end
         end
     end
 
