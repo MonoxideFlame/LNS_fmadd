@@ -22,34 +22,35 @@ module S_B (
 
 */
     always @ (z) begin 
-        if(z > -49) begin 
+        if(z > -47) begin 
             weight1 <= 12;
             weight2 <= 1;
-            abcissa <= 256;
-        end else if(z > -137) begin 
+            abcissa <= 257;
+        end else if(z > -142) begin 
             weight1 <= 2;
             weight2 <= 3;
-            abcissa <= 328;
+            abcissa <= 330;
 
-        end else if(z > -248) begin 
+        end else if(z > -264) begin 
             weight1 <= 12;
             weight2 <= 2;
-            abcissa <= 419;
+            abcissa <= 421;
 
-        end else if(z > -357) begin 
+        end else if(z > -367) begin 
             weight1 <= 3;
             weight2 <= 5;
-            abcissa <= 515;
+            abcissa <= 519;
 
-        end else if(z > -534) begin 
+        end else if(z > -537) begin 
             weight1 <= 4;
             weight2 <= 6;
             abcissa <= 664;
+            $display("<537");
 
-        end else if(z > -947) begin 
+        end else if(z > -960) begin 
             weight1 <= 6;
             weight2 <= 8;
-            abcissa <= 948;
+            abcissa <= 1000;
 
         end else begin
             weight1 <= 12;

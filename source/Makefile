@@ -10,8 +10,8 @@ simulate: add_sub.sv Testbench.sv
 	iverilog -g2012 add_sub.sv Testbench.sv 
 	./a.out
 
-add_sub: add_sub.sv sbdbtb.sv
-	iverilog -g2012 add_sub.sv sbdbtb.sv 
+add_sub: add_sub.sv sbdbtb.sv S_B.sv
+	iverilog -g2012 add_sub.sv sbdbtb.sv S_B.sv lut.sv
 	./a.out
 
 lut_gen: lut_gen.c

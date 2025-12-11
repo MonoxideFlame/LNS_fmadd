@@ -1,68 +1,1195 @@
-0: out = -2147483648;
-1: out = -963;
-2: out = -836;
-3: out = -761;
-4: out = -709;
-5: out = -668;
-6: out = -635;
-7: out = -607;
-8: out = -583;
-9: out = -561;
-10: out = -542;
-11: out = -525;
-12: out = -510;
-13: out = -495;
-14: out = -482;
-15: out = -470;
-16: out = -459;
-17: out = -448;
-18: out = -438;
-19: out = -428;
-20: out = -419;
-21: out = -411;
-22: out = -403;
-23: out = -395;
-24: out = -388;
-25: out = -381;
-26: out = -374;
-27: out = -367;
-28: out = -361;
-29: out = -355;
-30: out = -349;
-31: out = -344;
-
-
-
-
-0: out = -2147483648;
-32: out = -338;
-64: out = -226;
-96: out = -166;
-128: out = -127;
-160: out = -100;
-192: out = -80;
-224: out = -64;
-256: out = -52;
-288: out = -43;
-320: out = -35;
-352: out = -29;
-384: out = -24;
-416: out = -20;
-448: out = -16;
-480: out = -13;
-512: out = -11;
-544: out = -9;
-576: out = -7;
-608: out = -6;
-640: out = -5;
-672: out = -4;
-704: out = -3;
-736: out = -2;
-768: out = -2;
-800: out = -1;
-832: out = -1;
-864: out = -1;
-896: out = 0;
-928: out = 0;
-960: out = 0;
-992: out = 0;
+iverilog -g2012 add_sub.sv sbdbtb.sv S_B.sv lut.sv
+./a.out
+z:     0, out:   128, exact: 128.000000, error           0
+z:     1, out:   128, exact: 127.500677, error           0
+z:     2, out:   127, exact: 127.002708, error           0
+z:     3, out:   127, exact: 126.506092, error           0
+z:     4, out:   126, exact: 126.010830, error           0
+z:     5, out:   126, exact: 125.516922, error           0
+z:     6, out:   125, exact: 125.024367, error           0
+z:     7, out:   125, exact: 124.533166, error           0
+z:     8, out:   124, exact: 124.043318, error           0
+z:     9, out:   124, exact: 123.554824, error           0
+z:    10, out:   123, exact: 123.067682, error           0
+z:    11, out:   123, exact: 122.581893, error           0
+z:    12, out:   122, exact: 122.097457, error           0
+z:    13, out:   122, exact: 121.614373, error           0
+z:    14, out:   121, exact: 121.132641, error           0
+z:    15, out:   121, exact: 120.652261, error           0
+z:    16, out:   120, exact: 120.173233, error           0
+z:    17, out:   120, exact: 119.695556, error           0
+z:    18, out:   119, exact: 119.219229, error           0
+z:    19, out:   119, exact: 118.744254, error           0
+z:    20, out:   118, exact: 118.270628, error           0
+z:    21, out:   118, exact: 117.798353, error           0
+z:    22, out:   117, exact: 117.327427, error           0
+z:    23, out:   117, exact: 116.857850, error           0
+z:    24, out:   116, exact: 116.389621, error           0
+z:    25, out:   116, exact: 115.922741, error           0
+z:    26, out:   115, exact: 115.457208, error           0
+z:    27, out:   115, exact: 114.993022, error           0
+z:    28, out:   114, exact: 114.530183, error          -1
+z:    29, out:   114, exact: 114.068690, error           0
+z:    30, out:   113, exact: 113.608543, error          -1
+z:    31, out:   113, exact: 113.149740, error           0
+z:    32, out:   112, exact: 112.692282, error          -1
+z:    33, out:   112, exact: 112.236167, error           0
+z:    34, out:   111, exact: 111.781395, error          -1
+z:    35, out:   111, exact: 111.327966, error           0
+z:    36, out:   110, exact: 110.875879, error          -1
+z:    37, out:   110, exact: 110.425132, error           0
+z:    38, out:   109, exact: 109.975726, error          -1
+z:    39, out:   109, exact: 109.527660, error          -1
+z:    40, out:   108, exact: 109.080932, error          -1
+z:    41, out:   108, exact: 108.635542, error          -1
+z:    42, out:   107, exact: 108.191490, error          -1
+z:    43, out:   107, exact: 107.748774, error          -1
+z:    44, out:   106, exact: 107.307393, error          -1
+z:    45, out:   106, exact: 106.867347, error          -1
+z:    46, out:   105, exact: 106.428636, error          -1
+z:    47, out:   105, exact: 105.991257, error          -1
+z:    48, out:   105, exact: 105.555210, error          -1
+z:    49, out:   105, exact: 105.120495, error           0
+z:    50, out:   105, exact: 104.687110, error           0
+z:    51, out:   103, exact: 104.255054, error          -1
+z:    52, out:   103, exact: 103.824326, error          -1
+z:    53, out:   103, exact: 103.394926, error           0
+z:    54, out:   103, exact: 102.966852, error           0
+z:    55, out:   102, exact: 102.540103, error          -1
+z:    56, out:   102, exact: 102.114679, error           0
+z:    57, out:   102, exact: 101.690578, error           0
+z:    58, out:   102, exact: 101.267798, error           1
+z:    59, out:   100, exact: 100.846340, error          -1
+z:    60, out:   100, exact: 100.426201, error           0
+z:    61, out:   100, exact: 100.007382, error           0
+z:    62, out:   100, exact: 99.589879, error           0
+z:    63, out:    99, exact: 99.173694, error           0
+z:    64, out:    99, exact: 98.758823, error           0
+z:    65, out:    99, exact: 98.345266, error           1
+z:    66, out:    99, exact: 97.933022, error           1
+z:    67, out:    97, exact: 97.522089, error          -1
+z:    68, out:    97, exact: 97.112467, error           0
+z:    69, out:    97, exact: 96.704153, error           0
+z:    70, out:    97, exact: 96.297148, error           1
+z:    71, out:    96, exact: 95.891448, error           0
+z:    72, out:    96, exact: 95.487054, error           1
+z:    73, out:    96, exact: 95.083963, error           1
+z:    74, out:    96, exact: 94.682174, error           1
+z:    75, out:    94, exact: 94.281686, error           0
+z:    76, out:    94, exact: 93.882498, error           0
+z:    77, out:    94, exact: 93.484608, error           1
+z:    78, out:    94, exact: 93.088014, error           1
+z:    79, out:    93, exact: 92.692716, error           0
+z:    80, out:    93, exact: 92.298711, error           1
+z:    81, out:    93, exact: 91.905998, error           1
+z:    82, out:    93, exact: 91.514576, error           1
+z:    83, out:    91, exact: 91.124444, error           0
+z:    84, out:    91, exact: 90.735599, error           0
+z:    85, out:    91, exact: 90.348040, error           1
+z:    86, out:    91, exact: 89.961766, error           1
+z:    87, out:    90, exact: 89.576774, error           0
+z:    88, out:    90, exact: 89.193064, error           1
+z:    89, out:    90, exact: 88.810634, error           1
+z:    90, out:    90, exact: 88.429482, error           2
+z:    91, out:    88, exact: 88.049607, error           0
+z:    92, out:    88, exact: 87.671006, error           0
+z:    93, out:    88, exact: 87.293678, error           1
+z:    94, out:    88, exact: 86.917622, error           1
+z:    95, out:    87, exact: 86.542836, error           0
+z:    96, out:    87, exact: 86.169317, error           1
+z:    97, out:    87, exact: 85.797065, error           1
+z:    98, out:    87, exact: 85.426078, error           2
+z:    99, out:    85, exact: 85.056353, error           0
+z:   100, out:    85, exact: 84.687890, error           0
+z:   101, out:    85, exact: 84.320685, error           1
+z:   102, out:    85, exact: 83.954738, error           1
+z:   103, out:    84, exact: 83.590047, error           0
+z:   104, out:    84, exact: 83.226609, error           1
+z:   105, out:    84, exact: 82.864423, error           1
+z:   106, out:    84, exact: 82.503487, error           1
+z:   107, out:    82, exact: 82.143799, error           0
+z:   108, out:    82, exact: 81.785358, error           0
+z:   109, out:    82, exact: 81.428161, error           1
+z:   110, out:    82, exact: 81.072206, error           1
+z:   111, out:    81, exact: 80.717492, error           0
+z:   112, out:    81, exact: 80.364016, error           1
+z:   113, out:    81, exact: 80.011777, error           1
+z:   114, out:    81, exact: 79.660772, error           1
+z:   115, out:    79, exact: 79.311000, error           0
+z:   116, out:    79, exact: 78.962459, error           0
+z:   117, out:    79, exact: 78.615146, error           0
+z:   118, out:    79, exact: 78.269059, error           1
+z:   119, out:    78, exact: 77.924198, error           0
+z:   120, out:    78, exact: 77.580558, error           0
+z:   121, out:    78, exact: 77.238139, error           1
+z:   122, out:    78, exact: 76.896938, error           1
+z:   123, out:    76, exact: 76.556954, error          -1
+z:   124, out:    76, exact: 76.218184, error           0
+z:   125, out:    76, exact: 75.880625, error           0
+z:   126, out:    76, exact: 75.544276, error           0
+z:   127, out:    75, exact: 75.209135, error           0
+z:   128, out:    75, exact: 74.875200, error           0
+z:   129, out:    75, exact: 74.542468, error           0
+z:   130, out:    75, exact: 74.210937, error           1
+z:   131, out:    73, exact: 73.880605, error          -1
+z:   132, out:    73, exact: 73.551471, error          -1
+z:   133, out:    73, exact: 73.223530, error           0
+z:   134, out:    73, exact: 72.896782, error           0
+z:   135, out:    72, exact: 72.571224, error          -1
+z:   136, out:    72, exact: 72.246854, error           0
+z:   137, out:    72, exact: 71.923670, error           0
+z:   138, out:    72, exact: 71.601669, error           0
+z:   139, out:    70, exact: 71.280849, error          -1
+z:   140, out:    70, exact: 70.961208, error          -1
+z:   141, out:    70, exact: 70.642743, error          -1
+z:   142, out:    69, exact: 70.325453, error          -1
+z:   143, out:    69, exact: 70.009334, error          -1
+z:   144, out:    69, exact: 69.694385, error          -1
+z:   145, out:    69, exact: 69.380604, error           0
+z:   146, out:    68, exact: 69.067987, error          -1
+z:   147, out:    68, exact: 68.756532, error          -1
+z:   148, out:    68, exact: 68.446238, error           0
+z:   149, out:    68, exact: 68.137101, error           0
+z:   150, out:    67, exact: 67.829120, error          -1
+z:   151, out:    67, exact: 67.522291, error          -1
+z:   152, out:    67, exact: 67.216613, error           0
+z:   153, out:    67, exact: 66.912084, error           0
+z:   154, out:    66, exact: 66.608700, error          -1
+z:   155, out:    66, exact: 66.306459, error           0
+z:   156, out:    66, exact: 66.005359, error           0
+z:   157, out:    66, exact: 65.705397, error           0
+z:   158, out:    65, exact: 65.406571, error           0
+z:   159, out:    65, exact: 65.108879, error           0
+z:   160, out:    65, exact: 64.812317, error           0
+z:   161, out:    65, exact: 64.516884, error           0
+z:   162, out:    64, exact: 64.222577, error           0
+z:   163, out:    64, exact: 63.929393, error           0
+z:   164, out:    64, exact: 63.637331, error           0
+z:   165, out:    64, exact: 63.346386, error           1
+z:   166, out:    63, exact: 63.056558, error           0
+z:   167, out:    63, exact: 62.767843, error           0
+z:   168, out:    63, exact: 62.480238, error           1
+z:   169, out:    63, exact: 62.193742, error           1
+z:   170, out:    62, exact: 61.908352, error           0
+z:   171, out:    62, exact: 61.624064, error           0
+z:   172, out:    62, exact: 61.340877, error           1
+z:   173, out:    62, exact: 61.058789, error           1
+z:   174, out:    61, exact: 60.777795, error           0
+z:   175, out:    61, exact: 60.497894, error           1
+z:   176, out:    61, exact: 60.219084, error           1
+z:   177, out:    61, exact: 59.941361, error           1
+z:   178, out:    60, exact: 59.664723, error           0
+z:   179, out:    60, exact: 59.389167, error           1
+z:   180, out:    60, exact: 59.114691, error           1
+z:   181, out:    60, exact: 58.841292, error           1
+z:   182, out:    59, exact: 58.568967, error           0
+z:   183, out:    59, exact: 58.297715, error           1
+z:   184, out:    59, exact: 58.027531, error           1
+z:   185, out:    59, exact: 57.758414, error           1
+z:   186, out:    58, exact: 57.490360, error           1
+z:   187, out:    58, exact: 57.223368, error           1
+z:   188, out:    58, exact: 56.957434, error           1
+z:   189, out:    58, exact: 56.692556, error           1
+z:   190, out:    57, exact: 56.428731, error           1
+z:   191, out:    57, exact: 56.165957, error           1
+z:   192, out:    57, exact: 55.904230, error           1
+z:   193, out:    57, exact: 55.643548, error           1
+z:   194, out:    56, exact: 55.383908, error           1
+z:   195, out:    56, exact: 55.125309, error           1
+z:   196, out:    56, exact: 54.867746, error           1
+z:   197, out:    56, exact: 54.611217, error           1
+z:   198, out:    55, exact: 54.355719, error           1
+z:   199, out:    55, exact: 54.101250, error           1
+z:   200, out:    55, exact: 53.847808, error           1
+z:   201, out:    55, exact: 53.595388, error           1
+z:   202, out:    54, exact: 53.343989, error           1
+z:   203, out:    54, exact: 53.093608, error           1
+z:   204, out:    54, exact: 52.844242, error           1
+z:   205, out:    54, exact: 52.595888, error           1
+z:   206, out:    53, exact: 52.348543, error           1
+z:   207, out:    53, exact: 52.102205, error           1
+z:   208, out:    53, exact: 51.856872, error           1
+z:   209, out:    53, exact: 51.612539, error           1
+z:   210, out:    52, exact: 51.369205, error           1
+z:   211, out:    52, exact: 51.126866, error           1
+z:   212, out:    52, exact: 50.885521, error           1
+z:   213, out:    52, exact: 50.645166, error           1
+z:   214, out:    51, exact: 50.405797, error           1
+z:   215, out:    51, exact: 50.167414, error           1
+z:   216, out:    51, exact: 49.930012, error           1
+z:   217, out:    51, exact: 49.693589, error           1
+z:   218, out:    50, exact: 49.458143, error           1
+z:   219, out:    50, exact: 49.223670, error           1
+z:   220, out:    50, exact: 48.990167, error           1
+z:   221, out:    50, exact: 48.757633, error           1
+z:   222, out:    49, exact: 48.526063, error           0
+z:   223, out:    49, exact: 48.295455, error           1
+z:   224, out:    49, exact: 48.065807, error           1
+z:   225, out:    49, exact: 47.837116, error           1
+z:   226, out:    48, exact: 47.609378, error           0
+z:   227, out:    48, exact: 47.382591, error           1
+z:   228, out:    48, exact: 47.156753, error           1
+z:   229, out:    48, exact: 46.931860, error           1
+z:   230, out:    47, exact: 46.707909, error           0
+z:   231, out:    47, exact: 46.484898, error           1
+z:   232, out:    47, exact: 46.262824, error           1
+z:   233, out:    47, exact: 46.041684, error           1
+z:   234, out:    46, exact: 45.821476, error           0
+z:   235, out:    46, exact: 45.602196, error           0
+z:   236, out:    46, exact: 45.383841, error           1
+z:   237, out:    46, exact: 45.166410, error           1
+z:   238, out:    45, exact: 44.949898, error           0
+z:   239, out:    45, exact: 44.734304, error           0
+z:   240, out:    45, exact: 44.519624, error           0
+z:   241, out:    45, exact: 44.305855, error           1
+z:   242, out:    44, exact: 44.092995, error           0
+z:   243, out:    44, exact: 43.881042, error           0
+z:   244, out:    44, exact: 43.669991, error           0
+z:   245, out:    44, exact: 43.459840, error           1
+z:   246, out:    43, exact: 43.250587, error           0
+z:   247, out:    43, exact: 43.042229, error           0
+z:   248, out:    43, exact: 42.834762, error           0
+z:   249, out:    43, exact: 42.628185, error           0
+z:   250, out:    42, exact: 42.422493, error           0
+z:   251, out:    42, exact: 42.217685, error           0
+z:   252, out:    42, exact: 42.013758, error           0
+z:   253, out:    42, exact: 41.810708, error           0
+z:   254, out:    41, exact: 41.608533, error          -1
+z:   255, out:    41, exact: 41.407230, error           0
+z:   256, out:    41, exact: 41.206796, error           0
+z:   257, out:    41, exact: 41.007229, error           0
+z:   258, out:    40, exact: 40.808525, error          -1
+z:   259, out:    40, exact: 40.610682, error          -1
+z:   260, out:    40, exact: 40.413698, error           0
+z:   261, out:    40, exact: 40.217568, error           0
+z:   262, out:    39, exact: 40.022291, error          -1
+z:   263, out:    39, exact: 39.827863, error          -1
+z:   264, out:    38, exact: 39.634282, error          -2
+z:   265, out:    38, exact: 39.441545, error          -1
+z:   266, out:    38, exact: 39.249649, error          -1
+z:   267, out:    38, exact: 39.058592, error          -1
+z:   268, out:    38, exact: 38.868370, error          -1
+z:   269, out:    38, exact: 38.678980, error          -1
+z:   270, out:    38, exact: 38.490421, error           0
+z:   271, out:    38, exact: 38.302689, error           0
+z:   272, out:    37, exact: 38.115781, error          -1
+z:   273, out:    37, exact: 37.929695, error          -1
+z:   274, out:    37, exact: 37.744428, error          -1
+z:   275, out:    37, exact: 37.559976, error          -1
+z:   276, out:    37, exact: 37.376338, error           0
+z:   277, out:    37, exact: 37.193510, error           0
+z:   278, out:    37, exact: 37.011490, error           0
+z:   279, out:    37, exact: 36.830275, error           0
+z:   280, out:    36, exact: 36.649862, error          -1
+z:   281, out:    36, exact: 36.470248, error           0
+z:   282, out:    36, exact: 36.291431, error           0
+z:   283, out:    36, exact: 36.113408, error           0
+z:   284, out:    36, exact: 35.936175, error           0
+z:   285, out:    36, exact: 35.759731, error           0
+z:   286, out:    36, exact: 35.584072, error           0
+z:   287, out:    36, exact: 35.409197, error           1
+z:   288, out:    35, exact: 35.235101, error           0
+z:   289, out:    35, exact: 35.061782, error           0
+z:   290, out:    35, exact: 34.889238, error           0
+z:   291, out:    35, exact: 34.717466, error           0
+z:   292, out:    35, exact: 34.546462, error           0
+z:   293, out:    35, exact: 34.376225, error           1
+z:   294, out:    35, exact: 34.206752, error           1
+z:   295, out:    35, exact: 34.038040, error           1
+z:   296, out:    33, exact: 33.870085, error          -1
+z:   297, out:    33, exact: 33.702886, error          -1
+z:   298, out:    33, exact: 33.536440, error          -1
+z:   299, out:    33, exact: 33.370743, error           0
+z:   300, out:    33, exact: 33.205794, error           0
+z:   301, out:    33, exact: 33.041589, error           0
+z:   302, out:    33, exact: 32.878127, error           0
+z:   303, out:    33, exact: 32.715403, error           0
+z:   304, out:    32, exact: 32.553416, error          -1
+z:   305, out:    32, exact: 32.392162, error           0
+z:   306, out:    32, exact: 32.231640, error           0
+z:   307, out:    32, exact: 32.071846, error           0
+z:   308, out:    32, exact: 31.912778, error           0
+z:   309, out:    32, exact: 31.754433, error           0
+z:   310, out:    32, exact: 31.596808, error           0
+z:   311, out:    32, exact: 31.439901, error           1
+z:   312, out:    31, exact: 31.283708, error           0
+z:   313, out:    31, exact: 31.128229, error           0
+z:   314, out:    31, exact: 30.973459, error           0
+z:   315, out:    31, exact: 30.819396, error           0
+z:   316, out:    31, exact: 30.666037, error           0
+z:   317, out:    31, exact: 30.513380, error           0
+z:   318, out:    31, exact: 30.361423, error           1
+z:   319, out:    31, exact: 30.210162, error           1
+z:   320, out:    30, exact: 30.059594, error           0
+z:   321, out:    30, exact: 29.909718, error           0
+z:   322, out:    30, exact: 29.760531, error           0
+z:   323, out:    30, exact: 29.612030, error           0
+z:   324, out:    30, exact: 29.464212, error           1
+z:   325, out:    30, exact: 29.317075, error           1
+z:   326, out:    30, exact: 29.170617, error           1
+z:   327, out:    30, exact: 29.024834, error           1
+z:   328, out:    28, exact: 28.879724, error          -1
+z:   329, out:    28, exact: 28.735284, error          -1
+z:   330, out:    28, exact: 28.591513, error          -1
+z:   331, out:    28, exact: 28.448407, error           0
+z:   332, out:    28, exact: 28.305963, error           0
+z:   333, out:    28, exact: 28.164180, error           0
+z:   334, out:    28, exact: 28.023054, error           0
+z:   335, out:    28, exact: 27.882584, error           0
+z:   336, out:    27, exact: 27.742766, error          -1
+z:   337, out:    27, exact: 27.603598, error          -1
+z:   338, out:    27, exact: 27.465077, error           0
+z:   339, out:    27, exact: 27.327202, error           0
+z:   340, out:    27, exact: 27.189969, error           0
+z:   341, out:    27, exact: 27.053376, error           0
+z:   342, out:    27, exact: 26.917420, error           0
+z:   343, out:    27, exact: 26.782099, error           0
+z:   344, out:    26, exact: 26.647410, error          -1
+z:   345, out:    26, exact: 26.513352, error          -1
+z:   346, out:    26, exact: 26.379920, error           0
+z:   347, out:    26, exact: 26.247114, error           0
+z:   348, out:    26, exact: 26.114930, error           0
+z:   349, out:    26, exact: 25.983366, error           0
+z:   350, out:    26, exact: 25.852420, error           0
+z:   351, out:    26, exact: 25.722088, error           0
+z:   352, out:    25, exact: 25.592369, error          -1
+z:   353, out:    25, exact: 25.463260, error           0
+z:   354, out:    25, exact: 25.334759, error           0
+z:   355, out:    25, exact: 25.206863, error           0
+z:   356, out:    25, exact: 25.079570, error           0
+z:   357, out:    25, exact: 24.952877, error           0
+z:   358, out:    25, exact: 24.826783, error           0
+z:   359, out:    25, exact: 24.701283, error           0
+z:   360, out:    23, exact: 24.576377, error          -2
+z:   361, out:    23, exact: 24.452062, error          -1
+z:   362, out:    23, exact: 24.328334, error          -1
+z:   363, out:    23, exact: 24.205193, error          -1
+z:   364, out:    23, exact: 24.082635, error          -1
+z:   365, out:    23, exact: 23.960659, error          -1
+z:   366, out:    23, exact: 23.839261, error          -1
+<537
+z:   367, out:    22, exact: 23.718439, error          -2
+<537
+z:   368, out:    22, exact: 23.598192, error          -2
+<537
+z:   369, out:    22, exact: 23.478516, error          -1
+<537
+z:   370, out:    22, exact: 23.359410, error          -1
+<537
+z:   371, out:    22, exact: 23.240871, error          -1
+<537
+z:   372, out:    22, exact: 23.122896, error          -1
+<537
+z:   373, out:    22, exact: 23.005484, error          -1
+<537
+z:   374, out:    22, exact: 22.888631, error          -1
+<537
+z:   375, out:    22, exact: 22.772336, error          -1
+<537
+z:   376, out:    22, exact: 22.656597, error          -1
+<537
+z:   377, out:    21, exact: 22.541411, error          -2
+<537
+z:   378, out:    21, exact: 22.426775, error          -1
+<537
+z:   379, out:    21, exact: 22.312688, error          -1
+<537
+z:   380, out:    21, exact: 22.199147, error          -1
+<537
+z:   381, out:    21, exact: 22.086150, error          -1
+<537
+z:   382, out:    21, exact: 21.973695, error          -1
+<537
+z:   383, out:    21, exact: 21.861779, error          -1
+<537
+z:   384, out:    21, exact: 21.750400, error          -1
+<537
+z:   385, out:    21, exact: 21.639556, error          -1
+<537
+z:   386, out:    21, exact: 21.529245, error          -1
+<537
+z:   387, out:    21, exact: 21.419463, error           0
+<537
+z:   388, out:    21, exact: 21.310210, error           0
+<537
+z:   389, out:    21, exact: 21.201483, error           0
+<537
+z:   390, out:    21, exact: 21.093280, error           0
+<537
+z:   391, out:    21, exact: 20.985598, error           0
+<537
+z:   392, out:    21, exact: 20.878435, error           0
+<537
+z:   393, out:    20, exact: 20.771789, error          -1
+<537
+z:   394, out:    20, exact: 20.665658, error          -1
+<537
+z:   395, out:    20, exact: 20.560040, error          -1
+<537
+z:   396, out:    20, exact: 20.454932, error           0
+<537
+z:   397, out:    20, exact: 20.350332, error           0
+<537
+z:   398, out:    20, exact: 20.246239, error           0
+<537
+z:   399, out:    20, exact: 20.142649, error           0
+<537
+z:   400, out:    20, exact: 20.039561, error           0
+<537
+z:   401, out:    20, exact: 19.936973, error           0
+<537
+z:   402, out:    20, exact: 19.834882, error           0
+<537
+z:   403, out:    20, exact: 19.733287, error           0
+<537
+z:   404, out:    20, exact: 19.632184, error           0
+<537
+z:   405, out:    20, exact: 19.531573, error           0
+<537
+z:   406, out:    20, exact: 19.431451, error           1
+<537
+z:   407, out:    20, exact: 19.331816, error           1
+<537
+z:   408, out:    20, exact: 19.232665, error           1
+<537
+z:   409, out:    18, exact: 19.133997, error          -1
+<537
+z:   410, out:    18, exact: 19.035810, error          -1
+<537
+z:   411, out:    18, exact: 18.938101, error          -1
+<537
+z:   412, out:    18, exact: 18.840868, error          -1
+<537
+z:   413, out:    18, exact: 18.744110, error          -1
+<537
+z:   414, out:    18, exact: 18.647824, error          -1
+<537
+z:   415, out:    18, exact: 18.552008, error          -1
+<537
+z:   416, out:    18, exact: 18.456660, error           0
+<537
+z:   417, out:    18, exact: 18.361779, error           0
+<537
+z:   418, out:    18, exact: 18.267361, error           0
+<537
+z:   419, out:    18, exact: 18.173405, error           0
+<537
+z:   420, out:    18, exact: 18.079910, error           0
+<537
+z:   421, out:    18, exact: 17.986872, error           0
+<537
+z:   422, out:    18, exact: 17.894290, error           0
+<537
+z:   423, out:    18, exact: 17.802162, error           0
+<537
+z:   424, out:    18, exact: 17.710486, error           0
+<537
+z:   425, out:    17, exact: 17.619260, error          -1
+<537
+z:   426, out:    17, exact: 17.528482, error          -1
+<537
+z:   427, out:    17, exact: 17.438150, error           0
+<537
+z:   428, out:    17, exact: 17.348262, error           0
+<537
+z:   429, out:    17, exact: 17.258816, error           0
+<537
+z:   430, out:    17, exact: 17.169810, error           0
+<537
+z:   431, out:    17, exact: 17.081242, error           0
+<537
+z:   432, out:    17, exact: 16.993110, error           0
+<537
+z:   433, out:    17, exact: 16.905413, error           0
+<537
+z:   434, out:    17, exact: 16.818148, error           0
+<537
+z:   435, out:    17, exact: 16.731313, error           0
+<537
+z:   436, out:    17, exact: 16.644906, error           0
+<537
+z:   437, out:    17, exact: 16.558927, error           0
+<537
+z:   438, out:    17, exact: 16.473371, error           1
+<537
+z:   439, out:    17, exact: 16.388239, error           1
+<537
+z:   440, out:    17, exact: 16.303527, error           1
+<537
+z:   441, out:    16, exact: 16.219234, error           0
+<537
+z:   442, out:    16, exact: 16.135358, error           0
+<537
+z:   443, out:    16, exact: 16.051898, error           0
+<537
+z:   444, out:    16, exact: 15.968851, error           0
+<537
+z:   445, out:    16, exact: 15.886215, error           0
+<537
+z:   446, out:    16, exact: 15.803988, error           0
+<537
+z:   447, out:    16, exact: 15.722170, error           0
+<537
+z:   448, out:    16, exact: 15.640757, error           0
+<537
+z:   449, out:    16, exact: 15.559749, error           0
+<537
+z:   450, out:    16, exact: 15.479142, error           1
+<537
+z:   451, out:    16, exact: 15.398936, error           1
+<537
+z:   452, out:    16, exact: 15.319129, error           1
+<537
+z:   453, out:    16, exact: 15.239718, error           1
+<537
+z:   454, out:    16, exact: 15.160703, error           1
+<537
+z:   455, out:    16, exact: 15.082080, error           1
+<537
+z:   456, out:    16, exact: 15.003849, error           1
+<537
+z:   457, out:    15, exact: 14.926008, error           0
+<537
+z:   458, out:    15, exact: 14.848554, error           0
+<537
+z:   459, out:    15, exact: 14.771487, error           0
+<537
+z:   460, out:    15, exact: 14.694804, error           0
+<537
+z:   461, out:    15, exact: 14.618503, error           0
+<537
+z:   462, out:    15, exact: 14.542583, error           0
+<537
+z:   463, out:    15, exact: 14.467042, error           1
+<537
+z:   464, out:    15, exact: 14.391878, error           1
+<537
+z:   465, out:    15, exact: 14.317090, error           1
+<537
+z:   466, out:    15, exact: 14.242676, error           1
+<537
+z:   467, out:    15, exact: 14.168634, error           1
+<537
+z:   468, out:    15, exact: 14.094963, error           1
+<537
+z:   469, out:    15, exact: 14.021660, error           1
+<537
+z:   470, out:    15, exact: 13.948724, error           1
+<537
+z:   471, out:    15, exact: 13.876153, error           1
+<537
+z:   472, out:    15, exact: 13.803946, error           1
+<537
+z:   473, out:    13, exact: 13.732101, error          -1
+<537
+z:   474, out:    13, exact: 13.660616, error          -1
+<537
+z:   475, out:    13, exact: 13.589490, error          -1
+<537
+z:   476, out:    13, exact: 13.518721, error          -1
+<537
+z:   477, out:    13, exact: 13.448307, error           0
+<537
+z:   478, out:    13, exact: 13.378246, error           0
+<537
+z:   479, out:    13, exact: 13.308538, error           0
+<537
+z:   480, out:    13, exact: 13.239180, error           0
+<537
+z:   481, out:    13, exact: 13.170171, error           0
+<537
+z:   482, out:    13, exact: 13.101509, error           0
+<537
+z:   483, out:    13, exact: 13.033192, error           0
+<537
+z:   484, out:    13, exact: 12.965219, error           0
+<537
+z:   485, out:    13, exact: 12.897589, error           0
+<537
+z:   486, out:    13, exact: 12.830299, error           0
+<537
+z:   487, out:    13, exact: 12.763348, error           0
+<537
+z:   488, out:    13, exact: 12.696735, error           0
+<537
+z:   489, out:    12, exact: 12.630457, error          -1
+<537
+z:   490, out:    12, exact: 12.564514, error          -1
+<537
+z:   491, out:    12, exact: 12.498904, error           0
+<537
+z:   492, out:    12, exact: 12.433625, error           0
+<537
+z:   493, out:    12, exact: 12.368675, error           0
+<537
+z:   494, out:    12, exact: 12.304054, error           0
+<537
+z:   495, out:    12, exact: 12.239759, error           0
+<537
+z:   496, out:    12, exact: 12.175789, error           0
+<537
+z:   497, out:    12, exact: 12.112143, error           0
+<537
+z:   498, out:    12, exact: 12.048818, error           0
+<537
+z:   499, out:    12, exact: 11.985815, error           0
+<537
+z:   500, out:    12, exact: 11.923130, error           0
+<537
+z:   501, out:    12, exact: 11.860762, error           0
+<537
+z:   502, out:    12, exact: 11.798710, error           0
+<537
+z:   503, out:    12, exact: 11.736973, error           0
+<537
+z:   504, out:    12, exact: 11.675549, error           0
+<537
+z:   505, out:    11, exact: 11.614436, error          -1
+<537
+z:   506, out:    11, exact: 11.553633, error          -1
+<537
+z:   507, out:    11, exact: 11.493139, error           0
+<537
+z:   508, out:    11, exact: 11.432952, error           0
+<537
+z:   509, out:    11, exact: 11.373070, error           0
+<537
+z:   510, out:    11, exact: 11.313492, error           0
+<537
+z:   511, out:    11, exact: 11.254217, error           0
+<537
+z:   512, out:    11, exact: 11.195244, error           0
+<537
+z:   513, out:    11, exact: 11.136570, error           0
+<537
+z:   514, out:    11, exact: 11.078194, error           0
+<537
+z:   515, out:    11, exact: 11.020116, error           0
+<537
+z:   516, out:    11, exact: 10.962333, error           0
+<537
+z:   517, out:    11, exact: 10.904844, error           0
+<537
+z:   518, out:    11, exact: 10.847648, error           0
+<537
+z:   519, out:    11, exact: 10.790743, error           0
+<537
+z:   520, out:    11, exact: 10.734128, error           0
+<537
+z:   521, out:    10, exact: 10.677802, error          -1
+<537
+z:   522, out:    10, exact: 10.621762, error          -1
+<537
+z:   523, out:    10, exact: 10.566009, error          -1
+<537
+z:   524, out:    10, exact: 10.510540, error          -1
+<537
+z:   525, out:    10, exact: 10.455354, error           0
+<537
+z:   526, out:    10, exact: 10.400449, error           0
+<537
+z:   527, out:    10, exact: 10.345825, error           0
+<537
+z:   528, out:    10, exact: 10.291480, error           0
+<537
+z:   529, out:    10, exact: 10.237413, error           0
+<537
+z:   530, out:    10, exact: 10.183621, error           0
+<537
+z:   531, out:    10, exact: 10.130105, error           0
+<537
+z:   532, out:    10, exact: 10.076863, error           0
+<537
+z:   533, out:    10, exact: 10.023892, error           0
+<537
+z:   534, out:    10, exact: 9.971193, error           0
+<537
+z:   535, out:    10, exact: 9.918764, error           0
+<537
+z:   536, out:    10, exact: 9.866602, error           0
+z:   537, out:     8, exact: 9.814708, error          -2
+z:   538, out:     8, exact: 9.763080, error          -2
+z:   539, out:     8, exact: 9.711716, error          -2
+z:   540, out:     8, exact: 9.660615, error          -2
+z:   541, out:     8, exact: 9.609777, error          -2
+z:   542, out:     8, exact: 9.559199, error          -2
+z:   543, out:     8, exact: 9.508880, error          -2
+z:   544, out:     8, exact: 9.458820, error          -1
+z:   545, out:     8, exact: 9.409016, error          -1
+z:   546, out:     8, exact: 9.359468, error          -1
+z:   547, out:     8, exact: 9.310175, error          -1
+z:   548, out:     8, exact: 9.261134, error          -1
+z:   549, out:     8, exact: 9.212346, error          -1
+z:   550, out:     8, exact: 9.163808, error          -1
+z:   551, out:     8, exact: 9.115520, error          -1
+z:   552, out:     8, exact: 9.067480, error          -1
+z:   553, out:     7, exact: 9.019687, error          -2
+z:   554, out:     7, exact: 8.972140, error          -2
+z:   555, out:     7, exact: 8.924837, error          -2
+z:   556, out:     7, exact: 8.877778, error          -2
+z:   557, out:     7, exact: 8.830961, error          -2
+z:   558, out:     7, exact: 8.784385, error          -2
+z:   559, out:     7, exact: 8.738049, error          -2
+z:   560, out:     7, exact: 8.691952, error          -2
+z:   561, out:     7, exact: 8.646093, error          -2
+z:   562, out:     7, exact: 8.600469, error          -2
+z:   563, out:     7, exact: 8.555081, error          -2
+z:   564, out:     7, exact: 8.509927, error          -2
+z:   565, out:     7, exact: 8.465006, error          -1
+z:   566, out:     7, exact: 8.420317, error          -1
+z:   567, out:     7, exact: 8.375858, error          -1
+z:   568, out:     7, exact: 8.331629, error          -1
+z:   569, out:     7, exact: 8.287628, error          -1
+z:   570, out:     7, exact: 8.243854, error          -1
+z:   571, out:     7, exact: 8.200307, error          -1
+z:   572, out:     7, exact: 8.156984, error          -1
+z:   573, out:     7, exact: 8.113886, error          -1
+z:   574, out:     7, exact: 8.071010, error          -1
+z:   575, out:     7, exact: 8.028355, error          -1
+z:   576, out:     7, exact: 7.985922, error          -1
+z:   577, out:     7, exact: 7.943708, error          -1
+z:   578, out:     7, exact: 7.901712, error          -1
+z:   579, out:     7, exact: 7.859934, error          -1
+z:   580, out:     7, exact: 7.818371, error          -1
+z:   581, out:     7, exact: 7.777024, error          -1
+z:   582, out:     7, exact: 7.735891, error          -1
+z:   583, out:     7, exact: 7.694972, error          -1
+z:   584, out:     7, exact: 7.654264, error          -1
+z:   585, out:     7, exact: 7.613767, error          -1
+z:   586, out:     7, exact: 7.573480, error          -1
+z:   587, out:     7, exact: 7.533402, error          -1
+z:   588, out:     7, exact: 7.493532, error           0
+z:   589, out:     7, exact: 7.453868, error           0
+z:   590, out:     7, exact: 7.414410, error           0
+z:   591, out:     7, exact: 7.375157, error           0
+z:   592, out:     7, exact: 7.336108, error           0
+z:   593, out:     7, exact: 7.297261, error           0
+z:   594, out:     7, exact: 7.258616, error           0
+z:   595, out:     7, exact: 7.220172, error           0
+z:   596, out:     7, exact: 7.181927, error           0
+z:   597, out:     7, exact: 7.143881, error           0
+z:   598, out:     7, exact: 7.106033, error           0
+z:   599, out:     7, exact: 7.068382, error           0
+z:   600, out:     7, exact: 7.030926, error           0
+z:   601, out:     7, exact: 6.993665, error           0
+z:   602, out:     7, exact: 6.956598, error           0
+z:   603, out:     7, exact: 6.919723, error           0
+z:   604, out:     7, exact: 6.883040, error           0
+z:   605, out:     7, exact: 6.846549, error           0
+z:   606, out:     7, exact: 6.810247, error           0
+z:   607, out:     7, exact: 6.774134, error           0
+z:   608, out:     7, exact: 6.738209, error           0
+z:   609, out:     7, exact: 6.702471, error           0
+z:   610, out:     7, exact: 6.666920, error           0
+z:   611, out:     7, exact: 6.631553, error           0
+z:   612, out:     7, exact: 6.596371, error           0
+z:   613, out:     7, exact: 6.561372, error           0
+z:   614, out:     7, exact: 6.526556, error           0
+z:   615, out:     7, exact: 6.491921, error           1
+z:   616, out:     7, exact: 6.457467, error           1
+z:   617, out:     6, exact: 6.423193, error           0
+z:   618, out:     6, exact: 6.389097, error           0
+z:   619, out:     6, exact: 6.355179, error           0
+z:   620, out:     6, exact: 6.321438, error           0
+z:   621, out:     6, exact: 6.287873, error           0
+z:   622, out:     6, exact: 6.254484, error           0
+z:   623, out:     6, exact: 6.221269, error           0
+z:   624, out:     6, exact: 6.188227, error           0
+z:   625, out:     6, exact: 6.155358, error           0
+z:   626, out:     6, exact: 6.122660, error           0
+z:   627, out:     6, exact: 6.090134, error           0
+z:   628, out:     6, exact: 6.057777, error           0
+z:   629, out:     6, exact: 6.025590, error           0
+z:   630, out:     6, exact: 5.993570, error           0
+z:   631, out:     6, exact: 5.961719, error           0
+z:   632, out:     6, exact: 5.930033, error           0
+z:   633, out:     6, exact: 5.898514, error           0
+z:   634, out:     6, exact: 5.867159, error           0
+z:   635, out:     6, exact: 5.835968, error           0
+z:   636, out:     6, exact: 5.804941, error           0
+z:   637, out:     6, exact: 5.774076, error           0
+z:   638, out:     6, exact: 5.743373, error           0
+z:   639, out:     6, exact: 5.712830, error           0
+z:   640, out:     6, exact: 5.682447, error           0
+z:   641, out:     6, exact: 5.652224, error           0
+z:   642, out:     6, exact: 5.622158, error           0
+z:   643, out:     6, exact: 5.592251, error           0
+z:   644, out:     6, exact: 5.562500, error           0
+z:   645, out:     6, exact: 5.532904, error           0
+z:   646, out:     6, exact: 5.503464, error           0
+z:   647, out:     6, exact: 5.474179, error           1
+z:   648, out:     6, exact: 5.445047, error           1
+z:   649, out:     6, exact: 5.416067, error           1
+z:   650, out:     6, exact: 5.387240, error           1
+z:   651, out:     6, exact: 5.358564, error           1
+z:   652, out:     6, exact: 5.330038, error           1
+z:   653, out:     6, exact: 5.301662, error           1
+z:   654, out:     6, exact: 5.273435, error           1
+z:   655, out:     6, exact: 5.245356, error           1
+z:   656, out:     6, exact: 5.217425, error           1
+z:   657, out:     6, exact: 5.189640, error           1
+z:   658, out:     6, exact: 5.162001, error           1
+z:   659, out:     6, exact: 5.134507, error           1
+z:   660, out:     6, exact: 5.107158, error           1
+z:   661, out:     6, exact: 5.079952, error           1
+z:   662, out:     6, exact: 5.052889, error           1
+z:   663, out:     6, exact: 5.025969, error           1
+z:   664, out:     6, exact: 4.999190, error           1
+z:   665, out:     6, exact: 4.972551, error           1
+z:   666, out:     6, exact: 4.946053, error           1
+z:   667, out:     6, exact: 4.919694, error           1
+z:   668, out:     6, exact: 4.893474, error           1
+z:   669, out:     6, exact: 4.867392, error           1
+z:   670, out:     6, exact: 4.841447, error           1
+z:   671, out:     6, exact: 4.815638, error           1
+z:   672, out:     6, exact: 4.789965, error           1
+z:   673, out:     6, exact: 4.764427, error           1
+z:   674, out:     6, exact: 4.739024, error           1
+z:   675, out:     6, exact: 4.713754, error           1
+z:   676, out:     6, exact: 4.688618, error           1
+z:   677, out:     6, exact: 4.663614, error           1
+z:   678, out:     6, exact: 4.638741, error           1
+z:   679, out:     6, exact: 4.614000, error           1
+z:   680, out:     6, exact: 4.589389, error           1
+z:   681, out:     5, exact: 4.564907, error           0
+z:   682, out:     5, exact: 4.540554, error           0
+z:   683, out:     5, exact: 4.516330, error           0
+z:   684, out:     5, exact: 4.492234, error           1
+z:   685, out:     5, exact: 4.468264, error           1
+z:   686, out:     5, exact: 4.444421, error           1
+z:   687, out:     5, exact: 4.420704, error           1
+z:   688, out:     5, exact: 4.397111, error           1
+z:   689, out:     5, exact: 4.373643, error           1
+z:   690, out:     5, exact: 4.350299, error           1
+z:   691, out:     5, exact: 4.327078, error           1
+z:   692, out:     5, exact: 4.303980, error           1
+z:   693, out:     5, exact: 4.281003, error           1
+z:   694, out:     5, exact: 4.258148, error           1
+z:   695, out:     5, exact: 4.235413, error           1
+z:   696, out:     5, exact: 4.212798, error           1
+z:   697, out:     5, exact: 4.190303, error           1
+z:   698, out:     5, exact: 4.167926, error           1
+z:   699, out:     5, exact: 4.145668, error           1
+z:   700, out:     5, exact: 4.123527, error           1
+z:   701, out:     5, exact: 4.101503, error           1
+z:   702, out:     5, exact: 4.079596, error           1
+z:   703, out:     5, exact: 4.057804, error           1
+z:   704, out:     5, exact: 4.036127, error           1
+z:   705, out:     5, exact: 4.014565, error           1
+z:   706, out:     5, exact: 3.993116, error           1
+z:   707, out:     5, exact: 3.971782, error           1
+z:   708, out:     5, exact: 3.950559, error           1
+z:   709, out:     5, exact: 3.929450, error           1
+z:   710, out:     5, exact: 3.908451, error           1
+z:   711, out:     5, exact: 3.887564, error           1
+z:   712, out:     5, exact: 3.866787, error           1
+z:   713, out:     5, exact: 3.846120, error           1
+z:   714, out:     5, exact: 3.825563, error           1
+z:   715, out:     5, exact: 3.805114, error           1
+z:   716, out:     5, exact: 3.784773, error           1
+z:   717, out:     5, exact: 3.764540, error           1
+z:   718, out:     5, exact: 3.744414, error           1
+z:   719, out:     5, exact: 3.724395, error           1
+z:   720, out:     5, exact: 3.704481, error           1
+z:   721, out:     5, exact: 3.684673, error           1
+z:   722, out:     5, exact: 3.664970, error           1
+z:   723, out:     5, exact: 3.645371, error           1
+z:   724, out:     5, exact: 3.625876, error           1
+z:   725, out:     5, exact: 3.606484, error           1
+z:   726, out:     5, exact: 3.587195, error           1
+z:   727, out:     5, exact: 3.568008, error           1
+z:   728, out:     5, exact: 3.548923, error           1
+z:   729, out:     5, exact: 3.529939, error           1
+z:   730, out:     5, exact: 3.511055, error           1
+z:   731, out:     5, exact: 3.492271, error           2
+z:   732, out:     5, exact: 3.473587, error           2
+z:   733, out:     5, exact: 3.455002, error           2
+z:   734, out:     5, exact: 3.436516, error           2
+z:   735, out:     5, exact: 3.418128, error           2
+z:   736, out:     5, exact: 3.399837, error           2
+z:   737, out:     5, exact: 3.381643, error           2
+z:   738, out:     5, exact: 3.363545, error           2
+z:   739, out:     5, exact: 3.345544, error           2
+z:   740, out:     5, exact: 3.327637, error           2
+z:   741, out:     5, exact: 3.309826, error           2
+z:   742, out:     5, exact: 3.292110, error           2
+z:   743, out:     5, exact: 3.274487, error           2
+z:   744, out:     5, exact: 3.256958, error           2
+z:   745, out:     3, exact: 3.239522, error           0
+z:   746, out:     3, exact: 3.222179, error           0
+z:   747, out:     3, exact: 3.204927, error           0
+z:   748, out:     3, exact: 3.187767, error           0
+z:   749, out:     3, exact: 3.170698, error           0
+z:   750, out:     3, exact: 3.153720, error           0
+z:   751, out:     3, exact: 3.136832, error           0
+z:   752, out:     3, exact: 3.120034, error           0
+z:   753, out:     3, exact: 3.103324, error           0
+z:   754, out:     3, exact: 3.086704, error           0
+z:   755, out:     3, exact: 3.070172, error           0
+z:   756, out:     3, exact: 3.053727, error           0
+z:   757, out:     3, exact: 3.037370, error           0
+z:   758, out:     3, exact: 3.021100, error           0
+z:   759, out:     3, exact: 3.004917, error           0
+z:   760, out:     3, exact: 2.988819, error           0
+z:   761, out:     3, exact: 2.972807, error           0
+z:   762, out:     3, exact: 2.956880, error           0
+z:   763, out:     3, exact: 2.941038, error           0
+z:   764, out:     3, exact: 2.925279, error           0
+z:   765, out:     3, exact: 2.909605, error           0
+z:   766, out:     3, exact: 2.894014, error           0
+z:   767, out:     3, exact: 2.878506, error           0
+z:   768, out:     3, exact: 2.863080, error           0
+z:   769, out:     3, exact: 2.847736, error           0
+z:   770, out:     3, exact: 2.832474, error           0
+z:   771, out:     3, exact: 2.817293, error           0
+z:   772, out:     3, exact: 2.802193, error           0
+z:   773, out:     3, exact: 2.787173, error           0
+z:   774, out:     3, exact: 2.772234, error           0
+z:   775, out:     3, exact: 2.757373, error           0
+z:   776, out:     3, exact: 2.742592, error           0
+z:   777, out:     3, exact: 2.727889, error           0
+z:   778, out:     3, exact: 2.713265, error           0
+z:   779, out:     3, exact: 2.698718, error           0
+z:   780, out:     3, exact: 2.684249, error           0
+z:   781, out:     3, exact: 2.669856, error           0
+z:   782, out:     3, exact: 2.655541, error           0
+z:   783, out:     3, exact: 2.641301, error           0
+z:   784, out:     3, exact: 2.627138, error           0
+z:   785, out:     3, exact: 2.613050, error           0
+z:   786, out:     3, exact: 2.599037, error           0
+z:   787, out:     3, exact: 2.585098, error           0
+z:   788, out:     3, exact: 2.571234, error           0
+z:   789, out:     3, exact: 2.557443, error           0
+z:   790, out:     3, exact: 2.543726, error           0
+z:   791, out:     3, exact: 2.530083, error           0
+z:   792, out:     3, exact: 2.516511, error           0
+z:   793, out:     3, exact: 2.503012, error           0
+z:   794, out:     3, exact: 2.489585, error           1
+z:   795, out:     3, exact: 2.476230, error           1
+z:   796, out:     3, exact: 2.462946, error           1
+z:   797, out:     3, exact: 2.449732, error           1
+z:   798, out:     3, exact: 2.436589, error           1
+z:   799, out:     3, exact: 2.423516, error           1
+z:   800, out:     3, exact: 2.410513, error           1
+z:   801, out:     3, exact: 2.397579, error           1
+z:   802, out:     3, exact: 2.384714, error           1
+z:   803, out:     3, exact: 2.371917, error           1
+z:   804, out:     3, exact: 2.359189, error           1
+z:   805, out:     3, exact: 2.346529, error           1
+z:   806, out:     3, exact: 2.333936, error           1
+z:   807, out:     3, exact: 2.321410, error           1
+z:   808, out:     3, exact: 2.308951, error           1
+z:   809, out:     2, exact: 2.296559, error           0
+z:   810, out:     2, exact: 2.284232, error           0
+z:   811, out:     2, exact: 2.271972, error           0
+z:   812, out:     2, exact: 2.259777, error           0
+z:   813, out:     2, exact: 2.247646, error           0
+z:   814, out:     2, exact: 2.235581, error           0
+z:   815, out:     2, exact: 2.223580, error           0
+z:   816, out:     2, exact: 2.211643, error           0
+z:   817, out:     2, exact: 2.199770, error           0
+z:   818, out:     2, exact: 2.187960, error           0
+z:   819, out:     2, exact: 2.176213, error           0
+z:   820, out:     2, exact: 2.164529, error           0
+z:   821, out:     2, exact: 2.152907, error           0
+z:   822, out:     2, exact: 2.141347, error           0
+z:   823, out:     2, exact: 2.129849, error           0
+z:   824, out:     2, exact: 2.118412, error           0
+z:   825, out:     2, exact: 2.107037, error           0
+z:   826, out:     2, exact: 2.095722, error           0
+z:   827, out:     2, exact: 2.084467, error           0
+z:   828, out:     2, exact: 2.073273, error           0
+z:   829, out:     2, exact: 2.062138, error           0
+z:   830, out:     2, exact: 2.051063, error           0
+z:   831, out:     2, exact: 2.040047, error           0
+z:   832, out:     2, exact: 2.029090, error           0
+z:   833, out:     2, exact: 2.018192, error           0
+z:   834, out:     2, exact: 2.007351, error           0
+z:   835, out:     2, exact: 1.996569, error           0
+z:   836, out:     2, exact: 1.985844, error           0
+z:   837, out:     2, exact: 1.975176, error           0
+z:   838, out:     2, exact: 1.964566, error           0
+z:   839, out:     2, exact: 1.954012, error           0
+z:   840, out:     2, exact: 1.943514, error           0
+z:   841, out:     2, exact: 1.933073, error           0
+z:   842, out:     2, exact: 1.922688, error           0
+z:   843, out:     2, exact: 1.912358, error           0
+z:   844, out:     2, exact: 1.902083, error           0
+z:   845, out:     2, exact: 1.891863, error           0
+z:   846, out:     2, exact: 1.881698, error           0
+z:   847, out:     2, exact: 1.871587, error           0
+z:   848, out:     2, exact: 1.861530, error           0
+z:   849, out:     2, exact: 1.851527, error           0
+z:   850, out:     2, exact: 1.841577, error           0
+z:   851, out:     2, exact: 1.831681, error           0
+z:   852, out:     2, exact: 1.821837, error           0
+z:   853, out:     2, exact: 1.812046, error           0
+z:   854, out:     2, exact: 1.802308, error           0
+z:   855, out:     2, exact: 1.792621, error           0
+z:   856, out:     2, exact: 1.782987, error           0
+z:   857, out:     2, exact: 1.773404, error           0
+z:   858, out:     2, exact: 1.763872, error           0
+z:   859, out:     2, exact: 1.754391, error           0
+z:   860, out:     2, exact: 1.744961, error           0
+z:   861, out:     2, exact: 1.735581, error           0
+z:   862, out:     2, exact: 1.726252, error           0
+z:   863, out:     2, exact: 1.716972, error           0
+z:   864, out:     2, exact: 1.707742, error           0
+z:   865, out:     2, exact: 1.698562, error           0
+z:   866, out:     2, exact: 1.689431, error           0
+z:   867, out:     2, exact: 1.680348, error           0
+z:   868, out:     2, exact: 1.671314, error           0
+z:   869, out:     2, exact: 1.662329, error           0
+z:   870, out:     2, exact: 1.653391, error           0
+z:   871, out:     2, exact: 1.644501, error           0
+z:   872, out:     2, exact: 1.635659, error           0
+z:   873, out:     1, exact: 1.626865, error          -1
+z:   874, out:     1, exact: 1.618117, error          -1
+z:   875, out:     1, exact: 1.609416, error          -1
+z:   876, out:     1, exact: 1.600762, error          -1
+z:   877, out:     1, exact: 1.592154, error          -1
+z:   878, out:     1, exact: 1.583592, error          -1
+z:   879, out:     1, exact: 1.575076, error          -1
+z:   880, out:     1, exact: 1.566606, error          -1
+z:   881, out:     1, exact: 1.558181, error          -1
+z:   882, out:     1, exact: 1.549801, error          -1
+z:   883, out:     1, exact: 1.541466, error          -1
+z:   884, out:     1, exact: 1.533176, error          -1
+z:   885, out:     1, exact: 1.524930, error          -1
+z:   886, out:     1, exact: 1.516728, error          -1
+z:   887, out:     1, exact: 1.508570, error          -1
+z:   888, out:     1, exact: 1.500456, error          -1
+z:   889, out:     1, exact: 1.492386, error           0
+z:   890, out:     1, exact: 1.484358, error           0
+z:   891, out:     1, exact: 1.476374, error           0
+z:   892, out:     1, exact: 1.468432, error           0
+z:   893, out:     1, exact: 1.460533, error           0
+z:   894, out:     1, exact: 1.452676, error           0
+z:   895, out:     1, exact: 1.444861, error           0
+z:   896, out:     1, exact: 1.437089, error           0
+z:   897, out:     1, exact: 1.429358, error           0
+z:   898, out:     1, exact: 1.421668, error           0
+z:   899, out:     1, exact: 1.414019, error           0
+z:   900, out:     1, exact: 1.406412, error           0
+z:   901, out:     1, exact: 1.398845, error           0
+z:   902, out:     1, exact: 1.391319, error           0
+z:   903, out:     1, exact: 1.383833, error           0
+z:   904, out:     1, exact: 1.376387, error           0
+z:   905, out:     1, exact: 1.368982, error           0
+z:   906, out:     1, exact: 1.361615, error           0
+z:   907, out:     1, exact: 1.354289, error           0
+z:   908, out:     1, exact: 1.347001, error           0
+z:   909, out:     1, exact: 1.339753, error           0
+z:   910, out:     1, exact: 1.332544, error           0
+z:   911, out:     1, exact: 1.325373, error           0
+z:   912, out:     1, exact: 1.318241, error           0
+z:   913, out:     1, exact: 1.311147, error           0
+z:   914, out:     1, exact: 1.304091, error           0
+z:   915, out:     1, exact: 1.297073, error           0
+z:   916, out:     1, exact: 1.290092, error           0
+z:   917, out:     1, exact: 1.283149, error           0
+z:   918, out:     1, exact: 1.276243, error           0
+z:   919, out:     1, exact: 1.269374, error           0
+z:   920, out:     1, exact: 1.262542, error           0
+z:   921, out:     1, exact: 1.255747, error           0
+z:   922, out:     1, exact: 1.248988, error           0
+z:   923, out:     1, exact: 1.242266, error           0
+z:   924, out:     1, exact: 1.235579, error           0
+z:   925, out:     1, exact: 1.228928, error           0
+z:   926, out:     1, exact: 1.222313, error           0
+z:   927, out:     1, exact: 1.215734, error           0
+z:   928, out:     1, exact: 1.209190, error           0
+z:   929, out:     1, exact: 1.202680, error           0
+z:   930, out:     1, exact: 1.196206, error           0
+z:   931, out:     1, exact: 1.189767, error           0
+z:   932, out:     1, exact: 1.183362, error           0
+z:   933, out:     1, exact: 1.176991, error           0
+z:   934, out:     1, exact: 1.170655, error           0
+z:   935, out:     1, exact: 1.164353, error           0
+z:   936, out:     1, exact: 1.158084, error           0
+z:   937, out:     0, exact: 1.151849, error          -1
+z:   938, out:     0, exact: 1.145648, error          -1
+z:   939, out:     0, exact: 1.139480, error          -1
+z:   940, out:     0, exact: 1.133345, error          -1
+z:   941, out:     0, exact: 1.127243, error          -1
+z:   942, out:     0, exact: 1.121174, error          -1
+z:   943, out:     0, exact: 1.115137, error          -1
+z:   944, out:     0, exact: 1.109132, error          -1
+z:   945, out:     0, exact: 1.103160, error          -1
+z:   946, out:     0, exact: 1.097220, error          -1
+z:   947, out:     0, exact: 1.091312, error          -1
+z:   948, out:     0, exact: 1.085436, error          -1
+z:   949, out:     0, exact: 1.079591, error          -1
+z:   950, out:     0, exact: 1.073777, error          -1
+z:   951, out:     0, exact: 1.067995, error          -1
+z:   952, out:     0, exact: 1.062244, error          -1
+z:   953, out:     0, exact: 1.056524, error          -1
+z:   954, out:     0, exact: 1.050834, error          -1
+z:   955, out:     0, exact: 1.045175, error          -1
+z:   956, out:     0, exact: 1.039546, error          -1
+z:   957, out:     0, exact: 1.033948, error          -1
+z:   958, out:     0, exact: 1.028379, error          -1
+z:   959, out:     0, exact: 1.022841, error          -1
+z:   960, out:     0, exact: 1.017332, error          -1
+z:   961, out:     0, exact: 1.011853, error          -1
+z:   962, out:     0, exact: 1.006403, error          -1
+z:   963, out:     0, exact: 1.000983, error          -1
+z:   964, out:     0, exact: 0.995591, error          -1
+z:   965, out:     0, exact: 0.990229, error          -1
+z:   966, out:     0, exact: 0.984895, error          -1
+z:   967, out:     0, exact: 0.979590, error          -1
+z:   968, out:     0, exact: 0.974314, error          -1
+z:   969, out:     0, exact: 0.969066, error          -1
+z:   970, out:     0, exact: 0.963846, error          -1
+z:   971, out:     0, exact: 0.958654, error          -1
+z:   972, out:     0, exact: 0.953490, error          -1
+z:   973, out:     0, exact: 0.948354, error          -1
+z:   974, out:     0, exact: 0.943246, error          -1
+z:   975, out:     0, exact: 0.938164, error          -1
+z:   976, out:     0, exact: 0.933111, error          -1
+z:   977, out:     0, exact: 0.928084, error          -1
+z:   978, out:     0, exact: 0.923084, error          -1
+z:   979, out:     0, exact: 0.918111, error          -1
+z:   980, out:     0, exact: 0.913165, error          -1
+z:   981, out:     0, exact: 0.908246, error          -1
+z:   982, out:     0, exact: 0.903353, error          -1
+z:   983, out:     0, exact: 0.898486, error          -1
+z:   984, out:     0, exact: 0.893645, error          -1
+z:   985, out:     0, exact: 0.888831, error          -1
+z:   986, out:     0, exact: 0.884042, error          -1
+z:   987, out:     0, exact: 0.879279, error          -1
+z:   988, out:     0, exact: 0.874542, error          -1
+z:   989, out:     0, exact: 0.869830, error          -1
+z:   990, out:     0, exact: 0.865143, error          -1
+z:   991, out:     0, exact: 0.860482, error          -1
+z:   992, out:     0, exact: 0.855845, error          -1
+z:   993, out:     0, exact: 0.851234, error          -1
+z:   994, out:     0, exact: 0.846647, error          -1
+z:   995, out:     0, exact: 0.842085, error          -1
+z:   996, out:     0, exact: 0.837548, error          -1
+z:   997, out:     0, exact: 0.833035, error          -1
+z:   998, out:     0, exact: 0.828546, error          -1
+z:   999, out:     0, exact: 0.824081, error          -1
+z:  1000, out:     0, exact: 0.819641, error          -1
+z:  1001, out:     0, exact: 0.815224, error          -1
+z:  1002, out:     0, exact: 0.810831, error          -1
+z:  1003, out:     0, exact: 0.806461, error          -1
+z:  1004, out:     0, exact: 0.802116, error          -1
+z:  1005, out:     0, exact: 0.797793, error          -1
+z:  1006, out:     0, exact: 0.793494, error          -1
+z:  1007, out:     0, exact: 0.789218, error          -1
+z:  1008, out:     0, exact: 0.784964, error          -1
+z:  1009, out:     0, exact: 0.780734, error          -1
+z:  1010, out:     0, exact: 0.776526, error          -1
+z:  1011, out:     0, exact: 0.772342, error          -1
+z:  1012, out:     0, exact: 0.768179, error          -1
+z:  1013, out:     0, exact: 0.764039, error          -1
+z:  1014, out:     0, exact: 0.759921, error          -1
+z:  1015, out:     0, exact: 0.755826, error          -1
+z:  1016, out:     0, exact: 0.751752, error          -1
+z:  1017, out:     0, exact: 0.747700, error          -1
+z:  1018, out:     0, exact: 0.743670, error          -1
+z:  1019, out:     0, exact: 0.739662, error          -1
+z:  1020, out:     0, exact: 0.735676, error          -1
+z:  1021, out:     0, exact: 0.731710, error          -1
+z:  1022, out:     0, exact: 0.727767, error          -1

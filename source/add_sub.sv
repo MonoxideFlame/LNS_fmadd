@@ -1,22 +1,18 @@
-`include "lut.sv"
-`include "S_B.sv"
-
-
-module Preprocessor(input signed [10:0] x, input signed [10:0] y, input z_s, output reg signed [10:0] z, output reg signed [10:0] max_xy);
-
+module Preprocessor(input [11:0] x, input [11:0] y, output reg z_s, output reg [10:0] z, output reg signed [10:0] max_xy, output reg result_sign);
+    
     always_comb begin
-            if(x > y) begin
-                max_xy = y;
+            if({~x[10], x[9:0]} > {~y[10], y[9:0]}) begin
+                max_xy = x[10:0];
+                z = y[10:0] - x[10:0];
+                result_sign = x[11];
             end else begin
-                max_xy = x;
+                max_xy = y[10:0];
+                z = x[10:0] - y[10:0];
+                result_sign = y[11];
             end
+            z_s = x[11] ^ y[11];
     end
 
-    always_comb begin
-        if(z_s) begin
-            z = ((x-y) ^ ((x-y) >>> 12)) - ((x - y) >>> 12);//abs of twos complement
-        end
-    end
 endmodule
 
 module SBDB(input [10:0] z, input z_s, output reg signed [10:0] out);
@@ -71,7 +67,7 @@ module Adder (input signed [11:0] x, input signed [11:0] y, output reg signed [1
     wire signed z_s;
     assign z_s = x[11] ^ y[11];
 
-    Preprocessor pprop(.x(x_nosign), .y(y_nosign), .z(abs_diff), .max_xy(max_xy));
+    Preprocessor pprop(.x(x), .y(y), .z(abs_diff), .max_xy(max_xy), .result_sign(out_sign), .z_s(z_s));
     SBDB sbdb(.z(abs_diff), .z_s(z_s), .out(t));
 
 
@@ -80,12 +76,10 @@ module Adder (input signed [11:0] x, input signed [11:0] y, output reg signed [1
             if(z_s) begin
                 out = {1'b0, 11'b10000000000};
             end else begin
-                out = {x[11], x_nosign + 11'd128};
+                out = {x[11], x[10:0] + 11'd128};
             end
-        end else if(x_nosign > y_nosign) begin
-            out = {x[11], t + x_nosign};
         end else begin
-            out = {y[11], t + y_nosign};
+            out = {out_sign, t + max_xy};
         end
     end
 
