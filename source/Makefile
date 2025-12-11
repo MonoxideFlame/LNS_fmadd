@@ -6,8 +6,8 @@ sub: PWL_sub.c
 	clang++ -g PWL_sub.c
 	./a.out > output.txt
 
-simulate: add_sub.sv Testbench.sv
-	iverilog -g2012 add_sub.sv Testbench.sv 
+simulate: add_sub.sv Adder_tb.sv lut.sv S_B.sv
+	iverilog -g2012 add_sub.sv Adder_tb.sv lut.sv S_B.sv 
 	./a.out
 
 add_sub: add_sub.sv sbdbtb.sv S_B.sv
