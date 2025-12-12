@@ -1,0 +1,4 @@
+Subtraction:
+    Max error: -1.296067 %
+Addition:
+    Max error: -1.620673

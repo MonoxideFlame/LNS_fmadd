@@ -1,5 +1,5 @@
 module S_B (
-    input signed [10:0] z,
+    input signed [11:0] z,
     output reg signed [10:0] s_b
 );
 

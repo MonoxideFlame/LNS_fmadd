@@ -38,40 +38,40 @@ module F_3 (input [4:0] z, output reg signed [10:0] out);
 endmodule
 
 
-module F_4(input [5:0] z, output reg signed [10:0] out);
+module F_4(input [6:0] z, output reg signed [10:0] out);
     always_comb begin
         case(z)
-            6'sd1: out = -11'sd339;
-            6'sd2: out = -11'sd227;
-            6'sd3: out = -11'sd167;
-            6'sd4: out = -11'sd128;
-            6'sd5: out = -11'sd101;
-            6'sd6: out = -11'sd81;
-            6'sd7: out = -11'sd65;
-            6'sd8: out = -11'sd53;
-            6'sd9: out = -11'sd44;
-            6'sd10: out = -11'sd36;
-            6'sd11: out = -11'sd30;
-            6'sd12: out = -11'sd25;
-            6'sd13: out = -11'sd21;
-            6'sd14: out = -11'sd17;
-            6'sd15: out = -11'sd14;
-            6'sd16: out = -11'sd12;
-            6'sd17: out = -11'sd10;
-            6'sd18: out = -11'sd8;
-            6'sd19: out = -11'sd7;
-            6'sd20: out = -11'sd6;
-            6'sd21: out = -11'sd5;
-            6'sd22: out = -11'sd4;
-            6'sd23: out = -11'sd3;
-            6'sd24: out = -11'sd3;
-            6'sd25: out = -11'sd2;
-            6'sd26: out = -11'sd2;
-            6'sd27: out = -11'sd2;
-            6'sd28: out = -11'sd1;
-            6'sd29: out = -11'sd1;
-            6'sd30: out = -11'sd1;
-            6'sd31: out = -11'sd1;
+            7'sd1: out = -11'sd339;
+            7'sd2: out = -11'sd227;
+            7'sd3: out = -11'sd167;
+            7'sd4: out = -11'sd128;
+            7'sd5: out = -11'sd101;
+            7'sd6: out = -11'sd81;
+            7'sd7: out = -11'sd65;
+            7'sd8: out = -11'sd53;
+            7'sd9: out = -11'sd44;
+            7'sd10: out = -11'sd36;
+            7'sd11: out = -11'sd30;
+            7'sd12: out = -11'sd25;
+            7'sd13: out = -11'sd21;
+            7'sd14: out = -11'sd17;
+            7'sd15: out = -11'sd14;
+            7'sd16: out = -11'sd12;
+            7'sd17: out = -11'sd10;
+            7'sd18: out = -11'sd8;
+            7'sd19: out = -11'sd7;
+            7'sd20: out = -11'sd6;
+            7'sd21: out = -11'sd5;
+            7'sd22: out = -11'sd4;
+            7'sd23: out = -11'sd3;
+            7'sd24: out = -11'sd3;
+            7'sd25: out = -11'sd2;
+            7'sd26: out = -11'sd2;
+            7'sd27: out = -11'sd2;
+            7'sd28: out = -11'sd1;
+            7'sd29: out = -11'sd1;
+            7'sd30: out = -11'sd1;
+            7'sd31: out = -11'sd1;
             default: out = 11'sd0;
         endcase 
     end
