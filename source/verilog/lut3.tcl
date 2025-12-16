@@ -11,7 +11,7 @@ if {!([info exists env(UTDTOOLS)])} {
   exit 1
 }
 source [file join $env(UTDTOOLS) $env(UTDTOOLSVERSION) share yosys init.tcl]
-source ./lut.init
+source ./lut3.init
 
 if {!([file exists output])} {
   file mkdir output
