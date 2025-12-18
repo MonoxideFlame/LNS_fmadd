@@ -17,3 +17,5 @@ add_sub: add_sub.sv sbdbtb.sv S_B.sv
 lut_gen: lut_gen.c
 	clang -g -lm lut_gen.c
 	./a.out
+
+synthesis:
